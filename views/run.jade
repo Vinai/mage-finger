@@ -1,0 +1,6 @@
+h1= pageTitle
+p#status
+  | Running tests for target #{target}
+ul#results
+- each result in results
+    li #{result.version}: #{result.percent.toFixed(2)}%

@@ -1,2 +1,7 @@
-h1= title
-p Welcome to #{title}
+h1= pageTitle
+p Welcome to #{pageTitle}
+form.target(method="get", action="/run")
+  input(type="text", name="target")
+  input(type="submit", value="finger")
+p
+  | Please enter the Magento base url to check
